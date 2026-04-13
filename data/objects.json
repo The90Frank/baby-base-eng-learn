@@ -1,0 +1,34 @@
+{
+    "name": "Objects",
+    "icon": "🎯",
+    "levels": {
+        "1": [
+            { "w": "Ball", "d": "⚽" },
+            { "w": "Car", "d": "🚗" },
+            { "w": "Book", "d": "📖" },
+            { "w": "House", "d": "🏠" },
+            { "w": "Phone", "d": "📱" },
+            { "w": "Key", "d": "🔑" }
+        ],
+        "2": [
+            { "w": "Bicycle", "d": "🚲" },
+            { "w": "Airplane", "d": "✈️" },
+            { "w": "Guitar", "d": "🎸" },
+            { "w": "Camera", "d": "📷" },
+            { "w": "Umbrella", "d": "☂️" },
+            { "w": "Clock", "d": "🕐" },
+            { "w": "Balloon", "d": "🎈" },
+            { "w": "Rocket", "d": "🚀" }
+        ],
+        "3": [
+            { "w": "Telescope", "d": "🔭" },
+            { "w": "Microscope", "d": "🔬" },
+            { "w": "Scissors", "d": "✂️" },
+            { "w": "Paintbrush", "d": "🖌️" },
+            { "w": "Compass", "d": "🧭" },
+            { "w": "Hourglass", "d": "⏳" },
+            { "w": "Diamond", "d": "💎" },
+            { "w": "Helicopter", "d": "🚁" }
+        ]
+    }
+}

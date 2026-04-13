@@ -1,0 +1,36 @@
+{
+    "name": "Animals",
+    "icon": "🐾",
+    "levels": {
+        "1": [
+            { "w": "Dog", "d": "🐶" },
+            { "w": "Cat", "d": "🐱" },
+            { "w": "Fish", "d": "🐟" },
+            { "w": "Bird", "d": "🐦" },
+            { "w": "Rabbit", "d": "🐰" },
+            { "w": "Mouse", "d": "🐭" }
+        ],
+        "2": [
+            { "w": "Lion", "d": "🦁" },
+            { "w": "Elephant", "d": "🐘" },
+            { "w": "Monkey", "d": "🐵" },
+            { "w": "Horse", "d": "🐴" },
+            { "w": "Pig", "d": "🐷" },
+            { "w": "Frog", "d": "🐸" },
+            { "w": "Bear", "d": "🐻" },
+            { "w": "Cow", "d": "🐮" }
+        ],
+        "3": [
+            { "w": "Whale", "d": "🐋" },
+            { "w": "Dolphin", "d": "🐬" },
+            { "w": "Octopus", "d": "🐙" },
+            { "w": "Penguin", "d": "🐧" },
+            { "w": "Butterfly", "d": "🦋" },
+            { "w": "Turtle", "d": "🐢" },
+            { "w": "Crocodile", "d": "🐊" },
+            { "w": "Owl", "d": "🦉" },
+            { "w": "Giraffe", "d": "🦒" },
+            { "w": "Zebra", "d": "🦓" }
+        ]
+    }
+}

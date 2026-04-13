@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Game for Kids</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Schermata Iniziale -->
+    <div id="overlay">
+        <h1 class="overlay-title">Ready? 🌈</h1>
+
+        <div id="settings">
+            <h2 class="settings-title">Choose Categories</h2>
+            <div id="categories-list"></div>
+        </div>
+
+        <button id="play-button" onclick="startGame()">▶️ PLAY</button>
+        <p class="overlay-hint">Tocca per attivare l'audio!</p>
+    </div>
+
+    <!-- Gioco -->
+    <div id="feedback"></div>
+    <button id="repeat-btn" onclick="repeatWord()">👂 Listen Again</button>
+
+    <div id="game-container">
+        <div class="choices-grid">
+            <button class="choice-btn" id="c0" onclick="check(0)"></button>
+            <button class="choice-btn" id="c1" onclick="check(1)"></button>
+            <button class="choice-btn" id="c2" onclick="check(2)"></button>
+            <button class="choice-btn" id="c3" onclick="check(3)"></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

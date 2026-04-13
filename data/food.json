@@ -1,0 +1,36 @@
+{
+    "name": "Food",
+    "icon": "🍽️",
+    "levels": {
+        "1": [
+            { "w": "Apple", "d": "🍎" },
+            { "w": "Banana", "d": "🍌" },
+            { "w": "Milk", "d": "🥛" },
+            { "w": "Egg", "d": "🥚" },
+            { "w": "Bread", "d": "🍞" },
+            { "w": "Water", "d": "💧" }
+        ],
+        "2": [
+            { "w": "Orange", "d": "🍊" },
+            { "w": "Grapes", "d": "🍇" },
+            { "w": "Pizza", "d": "🍕" },
+            { "w": "Cake", "d": "🎂" },
+            { "w": "Cheese", "d": "🧀" },
+            { "w": "Cookie", "d": "🍪" },
+            { "w": "Ice Cream", "d": "🍦" },
+            { "w": "Candy", "d": "🍬" }
+        ],
+        "3": [
+            { "w": "Strawberry", "d": "🍓" },
+            { "w": "Watermelon", "d": "🍉" },
+            { "w": "Pineapple", "d": "🍍" },
+            { "w": "Broccoli", "d": "🥦" },
+            { "w": "Mushroom", "d": "🍄" },
+            { "w": "Avocado", "d": "🥑" },
+            { "w": "Coconut", "d": "🥥" },
+            { "w": "Chocolate", "d": "🍫" },
+            { "w": "Sandwich", "d": "🥪" },
+            { "w": "Spaghetti", "d": "🍝" }
+        ]
+    }
+}

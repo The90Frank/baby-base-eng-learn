@@ -1,0 +1,34 @@
+{
+    "name": "Nature",
+    "icon": "🌿",
+    "levels": {
+        "1": [
+            { "w": "Sun", "d": "☀️" },
+            { "w": "Moon", "d": "🌙" },
+            { "w": "Star", "d": "⭐" },
+            { "w": "Tree", "d": "🌳" },
+            { "w": "Flower", "d": "🌸" },
+            { "w": "Rain", "d": "🌧️" }
+        ],
+        "2": [
+            { "w": "Cloud", "d": "☁️" },
+            { "w": "Rainbow", "d": "🌈" },
+            { "w": "Mountain", "d": "⛰️" },
+            { "w": "Ocean", "d": "🌊" },
+            { "w": "Snow", "d": "❄️" },
+            { "w": "Fire", "d": "🔥" },
+            { "w": "Lightning", "d": "⚡" },
+            { "w": "Leaf", "d": "🍃" }
+        ],
+        "3": [
+            { "w": "Volcano", "d": "🌋" },
+            { "w": "Tornado", "d": "🌪️" },
+            { "w": "Cactus", "d": "🌵" },
+            { "w": "Mushroom", "d": "🍄" },
+            { "w": "Sunrise", "d": "🌅" },
+            { "w": "Waterfall", "d": "💦" },
+            { "w": "Earthquake", "d": "🌍" },
+            { "w": "Glacier", "d": "🏔️" }
+        ]
+    }
+}

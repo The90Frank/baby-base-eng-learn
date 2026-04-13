@@ -1,0 +1,28 @@
+{
+    "name": "Colors",
+    "icon": "🎨",
+    "levels": {
+        "1": [
+            { "w": "Red", "d": "<div class=\"color-block\" style=\"background-color:red\"></div>" },
+            { "w": "Blue", "d": "<div class=\"color-block\" style=\"background-color:blue\"></div>" },
+            { "w": "Yellow", "d": "<div class=\"color-block\" style=\"background-color:yellow\"></div>" },
+            { "w": "Green", "d": "<div class=\"color-block\" style=\"background-color:green\"></div>" }
+        ],
+        "2": [
+            { "w": "Orange", "d": "<div class=\"color-block\" style=\"background-color:orange\"></div>" },
+            { "w": "Purple", "d": "<div class=\"color-block\" style=\"background-color:purple\"></div>" },
+            { "w": "Pink", "d": "<div class=\"color-block\" style=\"background-color:pink\"></div>" },
+            { "w": "Brown", "d": "<div class=\"color-block\" style=\"background-color:brown\"></div>" },
+            { "w": "Black", "d": "<div class=\"color-block\" style=\"background-color:black\"></div>" },
+            { "w": "White", "d": "<div class=\"color-block\" style=\"background-color:white;border:2px solid #ccc\"></div>" }
+        ],
+        "3": [
+            { "w": "Gray", "d": "<div class=\"color-block\" style=\"background-color:gray\"></div>" },
+            { "w": "Gold", "d": "<div class=\"color-block\" style=\"background-color:gold\"></div>" },
+            { "w": "Silver", "d": "<div class=\"color-block\" style=\"background-color:silver\"></div>" },
+            { "w": "Turquoise", "d": "<div class=\"color-block\" style=\"background-color:turquoise\"></div>" },
+            { "w": "Violet", "d": "<div class=\"color-block\" style=\"background-color:violet\"></div>" },
+            { "w": "Coral", "d": "<div class=\"color-block\" style=\"background-color:coral\"></div>" }
+        ]
+    }
+}
