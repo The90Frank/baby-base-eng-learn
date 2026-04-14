@@ -1,0 +1,34 @@
+{
+    "name": "Sports",
+    "icon": "🏅",
+    "levels": {
+        "1": [
+            { "w": "Soccer", "d": "⚽" },
+            { "w": "Basketball", "d": "🏀" },
+            { "w": "Tennis", "d": "🎾" },
+            { "w": "Swimming", "d": "🏊" },
+            { "w": "Running", "d": "🏃" },
+            { "w": "Cycling", "d": "🚲" }
+        ],
+        "2": [
+            { "w": "Boxing", "d": "🥊" },
+            { "w": "Skating", "d": "⛸️" },
+            { "w": "Golf", "d": "⛳" },
+            { "w": "Volleyball", "d": "🏐" },
+            { "w": "Baseball", "d": "⚾" },
+            { "w": "Skiing", "d": "🎿" },
+            { "w": "Surfing", "d": "🏄" },
+            { "w": "Bowling", "d": "🎳" }
+        ],
+        "3": [
+            { "w": "Archery", "d": "🏹" },
+            { "w": "Fencing", "d": "🤺" },
+            { "w": "Gymnastics", "d": "🤸" },
+            { "w": "Rowing", "d": "🚣" },
+            { "w": "Climbing", "d": "🧗" },
+            { "w": "Badminton", "d": "🏸" },
+            { "w": "Wrestling", "d": "🤼" },
+            { "w": "Weightlifting", "d": "🏋️" }
+        ]
+    }
+}

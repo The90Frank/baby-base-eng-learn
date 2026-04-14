@@ -1,114 +1,10 @@
-// ── Dati categorie (embedded per compatibilità file://) ──
-const categoriesData = {
-    animals: {
-        name: "Animals", icon: "🐾",
-        levels: {
-            1: [
-                { w: "Dog", d: "🐶" }, { w: "Cat", d: "🐱" }, { w: "Fish", d: "🐟" },
-                { w: "Bird", d: "🐦" }, { w: "Rabbit", d: "🐰" }, { w: "Mouse", d: "🐭" }
-            ],
-            2: [
-                { w: "Lion", d: "🦁" }, { w: "Elephant", d: "🐘" }, { w: "Monkey", d: "🐵" },
-                { w: "Horse", d: "🐴" }, { w: "Pig", d: "🐷" }, { w: "Frog", d: "🐸" },
-                { w: "Bear", d: "🐻" }, { w: "Cow", d: "🐮" }
-            ],
-            3: [
-                { w: "Whale", d: "🐋" }, { w: "Dolphin", d: "🐬" }, { w: "Octopus", d: "🐙" },
-                { w: "Penguin", d: "🐧" }, { w: "Butterfly", d: "🦋" }, { w: "Turtle", d: "🐢" },
-                { w: "Crocodile", d: "🐊" }, { w: "Owl", d: "🦉" }, { w: "Giraffe", d: "🦒" },
-                { w: "Zebra", d: "🦓" }
-            ]
-        }
-    },
-    food: {
-        name: "Food", icon: "🍽️",
-        levels: {
-            1: [
-                { w: "Apple", d: "🍎" }, { w: "Banana", d: "🍌" }, { w: "Milk", d: "🥛" },
-                { w: "Egg", d: "🥚" }, { w: "Bread", d: "🍞" }, { w: "Water", d: "💧" }
-            ],
-            2: [
-                { w: "Orange", d: "🍊" }, { w: "Grapes", d: "🍇" }, { w: "Pizza", d: "🍕" },
-                { w: "Cake", d: "🎂" }, { w: "Cheese", d: "🧀" }, { w: "Cookie", d: "🍪" },
-                { w: "Ice Cream", d: "🍦" }, { w: "Candy", d: "🍬" }
-            ],
-            3: [
-                { w: "Strawberry", d: "🍓" }, { w: "Watermelon", d: "🍉" }, { w: "Pineapple", d: "🍍" },
-                { w: "Broccoli", d: "🥦" }, { w: "Mushroom", d: "🍄" }, { w: "Avocado", d: "🥑" },
-                { w: "Coconut", d: "🥥" }, { w: "Chocolate", d: "🍫" }, { w: "Sandwich", d: "🥪" },
-                { w: "Spaghetti", d: "🍝" }
-            ]
-        }
-    },
-    colors: {
-        name: "Colors", icon: "🎨",
-        levels: {
-            1: [
-                { w: "Red", d: '<div class="color-block" style="background-color:red"></div>' },
-                { w: "Blue", d: '<div class="color-block" style="background-color:blue"></div>' },
-                { w: "Yellow", d: '<div class="color-block" style="background-color:yellow"></div>' },
-                { w: "Green", d: '<div class="color-block" style="background-color:green"></div>' }
-            ],
-            2: [
-                { w: "Orange", d: '<div class="color-block" style="background-color:orange"></div>' },
-                { w: "Purple", d: '<div class="color-block" style="background-color:purple"></div>' },
-                { w: "Pink", d: '<div class="color-block" style="background-color:pink"></div>' },
-                { w: "Brown", d: '<div class="color-block" style="background-color:brown"></div>' },
-                { w: "Black", d: '<div class="color-block" style="background-color:black"></div>' },
-                { w: "White", d: '<div class="color-block" style="background-color:white;border:2px solid #ccc"></div>' }
-            ],
-            3: [
-                { w: "Gray", d: '<div class="color-block" style="background-color:gray"></div>' },
-                { w: "Gold", d: '<div class="color-block" style="background-color:gold"></div>' },
-                { w: "Silver", d: '<div class="color-block" style="background-color:silver"></div>' },
-                { w: "Turquoise", d: '<div class="color-block" style="background-color:turquoise"></div>' },
-                { w: "Violet", d: '<div class="color-block" style="background-color:violet"></div>' },
-                { w: "Coral", d: '<div class="color-block" style="background-color:coral"></div>' }
-            ]
-        }
-    },
-    objects: {
-        name: "Objects", icon: "🎯",
-        levels: {
-            1: [
-                { w: "Ball", d: "⚽" }, { w: "Car", d: "🚗" }, { w: "Book", d: "📖" },
-                { w: "House", d: "🏠" }, { w: "Phone", d: "📱" }, { w: "Key", d: "🔑" }
-            ],
-            2: [
-                { w: "Bicycle", d: "🚲" }, { w: "Airplane", d: "✈️" }, { w: "Guitar", d: "🎸" },
-                { w: "Camera", d: "📷" }, { w: "Umbrella", d: "☂️" }, { w: "Clock", d: "🕐" },
-                { w: "Balloon", d: "🎈" }, { w: "Rocket", d: "🚀" }
-            ],
-            3: [
-                { w: "Telescope", d: "🔭" }, { w: "Microscope", d: "🔬" }, { w: "Scissors", d: "✂️" },
-                { w: "Paintbrush", d: "🖌️" }, { w: "Compass", d: "🧭" }, { w: "Hourglass", d: "⏳" },
-                { w: "Diamond", d: "💎" }, { w: "Helicopter", d: "🚁" }
-            ]
-        }
-    },
-    nature: {
-        name: "Nature", icon: "🌿",
-        levels: {
-            1: [
-                { w: "Sun", d: "☀️" }, { w: "Moon", d: "🌙" }, { w: "Star", d: "⭐" },
-                { w: "Tree", d: "🌳" }, { w: "Flower", d: "🌸" }, { w: "Rain", d: "🌧️" }
-            ],
-            2: [
-                { w: "Cloud", d: "☁️" }, { w: "Rainbow", d: "🌈" }, { w: "Mountain", d: "⛰️" },
-                { w: "Ocean", d: "🌊" }, { w: "Snow", d: "❄️" }, { w: "Fire", d: "🔥" },
-                { w: "Lightning", d: "⚡" }, { w: "Leaf", d: "🍃" }
-            ],
-            3: [
-                { w: "Volcano", d: "🌋" }, { w: "Tornado", d: "🌪️" }, { w: "Cactus", d: "🌵" },
-                { w: "Mushroom", d: "🍄" }, { w: "Sunrise", d: "🌅" }, { w: "Waterfall", d: "💦" },
-                { w: "Earthquake", d: "🌍" }, { w: "Glacier", d: "🏔️" }
-            ]
-        }
-    }
-};
+/**
+ * GIOCO DELLE PAROLE - JS COMPLETO
+ * Versione: Caricamento Dinamico + Anti-Ripetizione + Controllo Icone Duplicate
+ */
 
-// ── Stato impostazioni ──
-// Ogni categoria: { enabled: bool, level: 1|2|3 }
+// ── Stato globale ──
+let categoriesData = {}; 
 const settings = {};
 
 // ── Stato gioco ──
@@ -117,15 +13,42 @@ let target = {};
 let options = [];
 let canClick = true;
 
+// ── Sistema Anti-Ripetizione ──
+let recentTargets = []; 
+const MAX_HISTORY = 10;
+
 // Inizializza voci browser
 let voices = [];
 window.speechSynthesis.onvoiceschanged = () => {
     voices = window.speechSynthesis.getVoices();
 };
 
-// ── Render settings ──
+// ── 1. Caricamento JSON da path relativi ──
+async function loadAllCategories() {
+    // Lista dei file .json nella cartella ./data/
+    // Aggiungi 'jobs' o 'sports' qui se hai creato i relativi file
+    const categoriesToLoad = ['animals', 'colors', 'food', 'nature', 'objects', 'jobs', 'sports'];
+    
+    try {
+        const loadPromises = categoriesToLoad.map(async (catName) => {
+            const response = await fetch(`./data/${catName}.json`);
+            if (!response.ok) throw new Error(`Errore caricando ${catName}`);
+            const data = await response.json();
+            categoriesData[catName] = data;
+        });
+
+        await Promise.all(loadPromises);
+        initSettings(); 
+    } catch (error) {
+        console.error("Errore fatale:", error);
+        alert("Errore nel caricamento dei dati. Controlla la console.");
+    }
+}
+
+// ── 2. Rendering Impostazioni ──
 function initSettings() {
     const container = document.getElementById('categories-list');
+    if (!container) return;
     container.innerHTML = '';
 
     for (const [key, cat] of Object.entries(categoriesData)) {
@@ -135,14 +58,12 @@ function initSettings() {
         card.className = 'category-card';
         card.id = `card-${key}`;
 
-        // Toggle button
         const toggle = document.createElement('button');
         toggle.className = 'category-toggle active';
         toggle.textContent = cat.icon;
         toggle.onclick = () => toggleCategory(key);
         toggle.id = `toggle-${key}`;
 
-        // Info
         const info = document.createElement('div');
         info.className = 'category-info';
 
@@ -174,14 +95,8 @@ function toggleCategory(key) {
     settings[key].enabled = !settings[key].enabled;
     const toggle = document.getElementById(`toggle-${key}`);
     const card = document.getElementById(`card-${key}`);
-
-    if (settings[key].enabled) {
-        toggle.classList.add('active');
-        card.classList.remove('disabled');
-    } else {
-        toggle.classList.remove('active');
-        card.classList.add('disabled');
-    }
+    toggle.classList.toggle('active', settings[key].enabled);
+    card.classList.toggle('disabled', !settings[key].enabled);
 }
 
 function setLevel(key, level) {
@@ -192,20 +107,19 @@ function setLevel(key, level) {
     }
 }
 
-// ── Costruisce il dizionario attivo in base alle impostazioni ──
+// ── 3. Logica di Gioco ──
+
 function buildDictionary() {
     dictionary = [];
     for (const [key, cfg] of Object.entries(settings)) {
         if (!cfg.enabled) continue;
         const cat = categoriesData[key];
-        // Include tutti i livelli fino a quello selezionato
         for (let l = 1; l <= cfg.level; l++) {
             dictionary.push(...cat.levels[l]);
         }
     }
 }
 
-// ── Audio ──
 function speak(text, rate = 0.8) {
     window.speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
@@ -214,35 +128,67 @@ function speak(text, rate = 0.8) {
     window.speechSynthesis.speak(u);
 }
 
-// ── Gioco ──
 function startGame() {
     buildDictionary();
-
     if (dictionary.length < 4) {
-        alert('Seleziona almeno una categoria con abbastanza parole!');
+        alert('Seleziona più parole per giocare!');
         return;
     }
-
+    recentTargets = [];
     speak("Let's go!", 1.0);
     document.getElementById('overlay').style.display = 'none';
     document.getElementById('game-container').style.display = 'block';
     setTimeout(startRound, 1000);
 }
 
-function repeatWord() {
-    if (target.w) {
-        speak(`Where is the ${target.w}?`);
-    }
-}
-
 function startRound() {
     canClick = true;
     document.getElementById('feedback').textContent = '';
 
-    const shuffled = [...dictionary].sort(() => 0.5 - Math.random());
-    options = shuffled.slice(0, 4);
-    target = options[Math.floor(Math.random() * 4)];
+    // Filtro Anti-Ripetizione Target
+    const dynamicHistoryLimit = Math.min(recentTargets.length, Math.floor(dictionary.length * 0.4));
+    const effectiveHistory = recentTargets.slice(-dynamicHistoryLimit);
+    const availableTargets = dictionary.filter(item => !effectiveHistory.includes(item.w));
+    
+    const targetPool = availableTargets.length > 0 ? availableTargets : dictionary;
+    target = targetPool[Math.floor(Math.random() * targetPool.length)];
 
+    recentTargets.push(target.w);
+    if (recentTargets.length > MAX_HISTORY) recentTargets.shift();
+
+    // --- NUOVA LOGICA: SELEZIONE OPZIONI UNIVOCHE PER ICONA ---
+    let roundOptions = [target];
+    
+    // Mescoliamo il dizionario per scegliere i distrattori in ordine casuale
+    let candidates = [...dictionary].sort(() => 0.5 - Math.random());
+
+    for (let item of candidates) {
+        if (roundOptions.length >= 4) break;
+
+        // Verifica che NON ci sia già una parola con lo stesso NOME o la stessa ICONA
+        const isDuplicateName = roundOptions.some(opt => opt.w === item.w);
+        const isDuplicateIcon = roundOptions.some(opt => opt.d === item.d);
+
+        if (!isDuplicateName && !isDuplicateIcon) {
+            roundOptions.push(item);
+        }
+    }
+
+    // Caso d'emergenza: se il dizionario è troppo piccolo e non trovo 4 icone diverse,
+    // allento il vincolo dell'icona (ma mantengo quello del nome)
+    if (roundOptions.length < 4) {
+        for (let item of candidates) {
+            if (roundOptions.length >= 4) break;
+            if (!roundOptions.some(opt => opt.w === item.w)) {
+                roundOptions.push(item);
+            }
+        }
+    }
+
+    // Mescoliamo le 4 opzioni finali per la posizione dei pulsanti
+    options = roundOptions.sort(() => 0.5 - Math.random());
+
+    // Rendering pulsanti
     for (let i = 0; i < 4; i++) {
         const btn = document.getElementById('c' + i);
         btn.innerHTML = options[i].d;
@@ -250,6 +196,12 @@ function startRound() {
     }
 
     setTimeout(repeatWord, 100);
+}
+
+function repeatWord() {
+    if (target.w) {
+        speak(`Where is the ${target.w}?`);
+    }
 }
 
 function check(idx) {
@@ -271,5 +223,5 @@ function check(idx) {
     }
 }
 
-// ── Init ──
-initSettings();
+// ── Avvio ──
+loadAllCategories();

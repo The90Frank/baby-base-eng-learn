@@ -1,0 +1,34 @@
+{
+    "name": "Professions",
+    "icon": "👨‍💼",
+    "levels": {
+        "1": [
+            { "w": "Doctor", "d": "👨‍⚕️" },
+            { "w": "Teacher", "d": "👩‍🏫" },
+            { "w": "Chef", "d": "👨‍🍳" },
+            { "w": "Farmer", "d": "👨‍🌾" },
+            { "w": "Police", "d": "👮" },
+            { "w": "Firefighter", "d": "👨‍🚒" }
+        ],
+        "2": [
+            { "w": "Artist", "d": "🎨" },
+            { "w": "Pilot", "d": "👨‍✈️" },
+            { "w": "Astronaut", "d": "👨‍🚀" },
+            { "w": "Scientist", "d": "👨‍🔬" },
+            { "w": "Judge", "d": "⚖️" },
+            { "w": "Mechanic", "d": "🔧" },
+            { "w": "Dentist", "d": "🦷" },
+            { "w": "Singer", "d": "🎤" }
+        ],
+        "3": [
+            { "w": "Architect", "d": "🏗️" },
+            { "w": "Detective", "d": "🕵️" },
+            { "w": "Librarian", "d": "📚" },
+            { "w": "Blacksmith", "d": "🔨" },
+            { "w": "Journalist", "d": "📰" },
+            { "w": "Surgeon", "d": "🏥" },
+            { "w": "Archaeologist", "d": "🏺" },
+            { "w": "Programmer", "d": "💻" }
+        ]
+    }
+}
