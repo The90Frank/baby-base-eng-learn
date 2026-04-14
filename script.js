@@ -225,3 +225,9 @@ function check(idx) {
 
 // ── Avvio ──
 loadAllCategories();
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js')
+    .then(() => console.log("Service Worker Registrato!"))
+    .catch((err) => console.log("Errore SW:", err));
+}
